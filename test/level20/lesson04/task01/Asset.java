@@ -1,6 +1,9 @@
-package com.javarush.test.level20.lesson02.task01;
+package com.javarush.test.level20.lesson04.task01;
 
-public class Asset {
+import java.io.Serializable;
+
+public class Asset implements Serializable{
+    private static final long serialVersionUID = 1L;
     public Asset(String name) {
         this.name = name;
     }
