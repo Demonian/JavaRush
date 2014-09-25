@@ -9,14 +9,14 @@ import java.util.List;
 Сделайте так, чтобы сериализация класса Human была возможной
 */
 public class Solution {
-    
+    public Solution(){}
+
     public static class Human implements Serializable{
         private static final long serialVersionUID = 1L;
         public String name;
         public List<Asset> assets = new ArrayList<Asset>();
 
-        public Human() {
-        }
+        public Human() {}
 
         public Human(String name, Asset... assets) {
             this.name = name;
